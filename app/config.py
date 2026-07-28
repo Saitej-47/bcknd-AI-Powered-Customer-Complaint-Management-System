@@ -21,11 +21,14 @@ class Settings(BaseSettings):
     # Groq LLM Settings
     GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
     GROQ_MODEL: str = os.getenv("GROQ_MODEL", "gemma2-9b-it")
-    # CORS
+    
+    # CORS - Include Production Vercel URL
     ALLOWED_ORIGINS: list = [
+        "https://frontend-ai-powered-customer-compla.vercel.app",
         "http://localhost:3000",
         "http://localhost:8000",
         "http://127.0.0.1:3000",
+        "http://127.0.0.1:8000",
     ]
     
     class Config:
