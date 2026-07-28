@@ -24,6 +24,7 @@ class Settings(BaseSettings):
     
     # CORS - Include Production Vercel URL
     ALLOWED_ORIGINS: list = [
+        "https://frontend-ai-powered-customer-com-git-620f1a-p-sai-tejs-projects.vercel.app",
         "https://frontend-ai-powered-customer-complaint-management-m98jnqmf1.vercel.app",
         "https://frontend-ai-powered-customer-compla.vercel.app",
         "http://localhost:3000",
